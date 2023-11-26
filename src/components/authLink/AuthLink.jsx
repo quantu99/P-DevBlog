@@ -47,13 +47,13 @@ const AuthLink = () => {
             ...prevValues,
             cat: category,
         }));
-    }, [category]);
+    }, [category, values]);
     useEffect(() => {
         setValues((prevValues) => ({
             ...prevValues,
             userId: id,
         }));
-    }, [id]);
+    }, [id, values]);
     const handleChange = (e) => {
         setValues({
             ...values,

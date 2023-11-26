@@ -20,7 +20,7 @@ const SingleCategory = ({ searchParams }) => {
                 setIsCallingAPI(false);
             }, 10000);
         }
-    }, [allPosts, isCallingAPI]);
+    }, [allPosts, isCallingAPI, dispatch]);
     const catPosts = allPosts?.filter((posts) => posts.cat.includes(`${cat}`));
     const indexOfLastPost = currentPage * postsPerPage;
     const indexOfFirstPost = indexOfLastPost - postsPerPage;

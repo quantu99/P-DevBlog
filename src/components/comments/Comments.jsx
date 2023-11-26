@@ -75,7 +75,7 @@ const Comments = ({ singlePostId, singlePost }) => {
             )}
             <div className={styles.commentsContainer}>
                 {currentComments?.map((item) => (
-                    <div className={styles.comment}>
+                    <div key={item?._id} className={styles.comment}>
                         <div className={styles.info}>
                             {item?.user?.avatar && (
                                 <Image

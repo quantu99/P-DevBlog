@@ -11,7 +11,7 @@ const Recommend = ({ singlePost }) => {
     const allPosts = useSelector((state) => state.post.getAllPosts?.allPosts);
     useEffect(() => {
         getAllPosts(dispatch);
-    }, []);
+    }, [dispatch]);
     const relatedPosts = allPosts?.filter((item) => {
         return singlePost?.cat?.some((element) => item.type === element.type);
     });

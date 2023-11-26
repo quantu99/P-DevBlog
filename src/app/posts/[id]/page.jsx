@@ -14,16 +14,14 @@ const SinglePost = ({ params }) => {
     const [isCallingAPI, setIsCallingAPI] = useState(false);
     useEffect(() => {
         if (!isCallingAPI) {
-            // Gọi API chỉ khi không đang trong quá trình gọi API
             setIsCallingAPI(true);
             getSinglePost(id, dispatch);
 
-            // Đặt thời gian chờ 3 giây trước khi cho phép gọi API tiếp theo
             setTimeout(() => {
                 setIsCallingAPI(false);
             }, 10000);
         }
-    }, [singlePost?.comment, isCallingAPI]);
+    }, [singlePost?.comment, isCallingAPI, dispatch, id]);
     return (
         <div className={styles.container}>
             <h1 className={styles.title}>{singlePost?.title}</h1>

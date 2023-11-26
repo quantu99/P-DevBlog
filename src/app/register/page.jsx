@@ -42,10 +42,10 @@ const Login = () => {
             values.password.length >= 6 &&
             values.confirmPassword === values.password;
         setValid(isValid);
-    }, [values]);
+    }, [values, dispatch]);
     useEffect(() => {
         getAllUsers(dispatch);
-    }, []);
+    }, [dispatch]);
     const [usernameError, setUsernameError] = useState(false);
     const [emailError, setEmailError] = useState(false);
     const allUsers = useSelector((state) => state.user.getAllUsers?.allUsers);
