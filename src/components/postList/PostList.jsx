@@ -19,7 +19,7 @@ const PostList = () => {
                 setIsCallingAPI(false);
             }, 10000);
         }
-    }, [allPosts, isCallingAPI, dispatch]);
+    }, [allPosts, isCallingAPI]);
     const indexOfLastPost = currentPage * postsPerPage;
     const indexOfFirstPost = indexOfLastPost - postsPerPage;
     const currentPosts = allPosts?.slice(indexOfFirstPost, indexOfLastPost);
