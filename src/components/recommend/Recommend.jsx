@@ -11,7 +11,7 @@ const Recommend = ({ singlePost }) => {
     const allPosts = useSelector((state) => state.post.getAllPosts?.allPosts);
     useEffect(() => {
         getAllPosts(dispatch);
-    }, []);
+    }, [dispatch]);
     const relatedPosts = allPosts?.filter((item) => {
         return singlePost?.cat?.some((element) => item.type === element.type);
     });
@@ -41,6 +41,7 @@ const Recommend = ({ singlePost }) => {
                             <div className={styles.catContainer}>
                                 {post?.cat.map((item) => (
                                     <Link
+                                        key={item}
                                         href={`/categories?cat=${item}`}
                                         className={`${styles.category} ${styles[item]}`}
                                     >

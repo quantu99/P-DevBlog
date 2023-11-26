@@ -19,7 +19,7 @@ const Introduce = () => {
                     <button className={styles.button}>Read more</button>
                 </div>
                 <div className={styles.imageContainer}>
-                    <img src="/logo.jfif" className={styles.image} />
+                    <img alt="image" src="/logo.jfif" className={styles.image} />
                 </div>
             </div>
         </div>

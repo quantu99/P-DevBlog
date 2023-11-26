@@ -136,7 +136,7 @@ const AuthLink = () => {
                         style={{ display: 'none' }}
                     />
                     <label onClick={() => setChecked2nd(false)} className={styles.writeForm}>
-                        <h1 className={styles.writeTitle}>What's going on today, buddy?</h1>
+                        <h1 className={styles.writeTitle}>What&apos;s going on today, buddy?</h1>
                         <div className={styles.titleInputContainer}>
                             <input
                                 onClick={() => setChecked2nd(false)}
