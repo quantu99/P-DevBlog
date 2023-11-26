@@ -1,0 +1,90 @@
+.container {
+    background-color: var(--softBg);
+    width: 70%;
+    display: flex;
+    margin: 40px auto;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 40px 100px;
+}
+.title {
+    font-size: 35px;
+    text-align: center;
+    padding: 0px 0px 30px;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.inputContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.input {
+    border: 1px solid var(--text);
+    outline: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.errors {
+    font-size: 13px;
+    font-weight: 300;
+    color: #ff3f3f;
+}
+.buttonContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.button {
+    display: flex;
+    margin: 20px auto 0px;
+    width: 25%;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    padding: 10px 0px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #00ac00;
+    color: white;
+}
+.loadingButton {
+    display: flex;
+    margin: 20px auto 0px;
+    width: 25%;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    padding: 10px 0px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #00ac00;
+    color: white;
+}
+.loadingBtnContent {
+    display: inline-block;
+    animation: wave 2s infinite;
+}
+@keyframes wave {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+.button:hover {
+    transition: all 0.2s ease-out;
+    background-color: #01cc01;
+}

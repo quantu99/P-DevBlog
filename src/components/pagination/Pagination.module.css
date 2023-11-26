@@ -1,0 +1,20 @@
+.container {
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+.button {
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #fd1d0d;
+    min-width: 100px;
+    max-width: 100px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: var(--textColor);
+}
+.button:hover {
+    background-color: #ff1100;
+    transition: all 0.2s ease-out;
+}

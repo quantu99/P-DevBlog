@@ -1,0 +1,77 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.title {
+    font-size: 20px;
+    color: var(--text);
+}
+.navigate {
+    text-decoration: underline;
+}
+.navigate:hover {
+    color: #218bff;
+}
+.writeContainer {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+.input {
+    width: 100%;
+    padding: 20px;
+    font-size: 16px;
+}
+.button {
+    padding: 16px 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: orange;
+    color: #fff;
+}
+.button:hover {
+    background-color: #ff8800;
+    transition: all 0.2s ease-out;
+}
+.commentsContainer {
+    padding: 40px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+.comment {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.info {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+.avatar {
+    border-radius: 50%;
+    object-fit: cover;
+}
+.author {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+.name {
+    color: var(--text);
+    font-size: 16px;
+}
+.time {
+    color: gray;
+    font-size: 14px;
+}
+.description {
+    font-size: 16px;
+    line-height: 1.4;
+    color: var(--text);
+    font-weight: 300;
+}

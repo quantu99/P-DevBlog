@@ -1,0 +1,68 @@
+.container {
+    display: flex;
+    padding: 60px 0px 30px;
+}
+.introduce {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+.logoContainer {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.textContainer {
+    padding: 10px 0px;
+}
+.logo {
+    font-size: 18px;
+    color: var(--textColor);
+}
+.text {
+    font-size: 16px;
+    line-height: 1.4;
+    color: var(--textColor);
+    font-weight: 300;
+}
+.social {
+    display: flex;
+    gap: 14px;
+}
+.image {
+    object-fit: cover;
+    border-radius: 50%;
+}
+.logoImage {
+    object-fit: cover;
+    border-radius: 50%;
+}
+.navigation {
+    flex: 1;
+    display: flex;
+    justify-content: flex-en7;
+    gap: 80px;
+    padding-left: 20px;
+}
+.links {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.linksHeading {
+    font-weight: bolder;
+    font-size: 24px;
+}
+.linksList {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    cursor: pointer;
+}
+.linksListItem {
+    color: var(--textColor);
+    font-weight: 300;
+}
