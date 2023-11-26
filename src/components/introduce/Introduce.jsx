@@ -5,7 +5,7 @@ const Introduce = () => {
     return (
         <div className={styles.container}>
             <h1 className={styles.title}>
-                <b>Welcome to Q-DevBlog!</b> Discover my stories and something cool here
+                <b>Welcome to PaulyBlog!</b> Discover my stories and something cool here
             </h1>
             <div className={styles.post}>
                 <div className={styles.textContainer}>
