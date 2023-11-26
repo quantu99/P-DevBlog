@@ -27,6 +27,7 @@ const Recommend = ({ singlePost }) => {
             <div className={styles.menuPostsContainer}>
                 {relatedPosts?.map((post) => (
                     <Link
+                        key={post?._id}
                         href={`/posts/${post._id}`}
                         onClick={() => handleClick(post._id)}
                         className={styles.menuPosts}
