@@ -172,6 +172,7 @@ const Login = () => {
                             height={40}
                             width={40}
                             className={styles.avatar}
+                            alt="empty"
                         />
                     </label>
                     <label style={{ cursor: 'pointer' }} htmlFor="file" className={styles.label}>

@@ -153,7 +153,9 @@ const AuthLink = () => {
                                 </label>
                                 <div className={styles.menuRadio}>
                                     {category?.map((item) => (
-                                        <div className={`${styles.category} ${styles[item]}`}>{item}</div>
+                                        <div key={item} className={`${styles.category} ${styles[item]}`}>
+                                            {item}
+                                        </div>
                                     ))}
                                 </div>
                                 <input

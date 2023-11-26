@@ -18,16 +18,16 @@ const Footer = () => {
                 </div>
                 <div className={styles.social}>
                     <Link href="/" className={styles.link}>
-                        <Image src="/facebook.png" width={30} height={30} className={styles.image} />
+                        <Image alt="facebook" src="/facebook.png" width={30} height={30} className={styles.image} />
                     </Link>
                     <Link href="/" className={styles.link}>
-                        <Image src="/github.png" width={30} height={30} className={styles.image} />
+                        <Image alt="github" src="/github.png" width={30} height={30} className={styles.image} />
                     </Link>
                     <Link href="/" className={styles.link}>
-                        <Image src="/linkedin.png" width={30} height={30} className={styles.image} />
+                        <Image alt="linkedin" src="/linkedin.png" width={30} height={30} className={styles.image} />
                     </Link>
                     <Link href="/" className={styles.link}>
-                        <Image src="/gmail.png" width={30} height={30} className={styles.image} />
+                        <Image alt="gmail" src="/gmail.png" width={30} height={30} className={styles.image} />
                     </Link>
                 </div>
             </div>

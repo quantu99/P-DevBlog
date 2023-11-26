@@ -22,7 +22,11 @@ const Post = ({ post }) => {
             <div className={styles.contentContainer}>
                 <div className={styles.categories}>
                     {post?.cat.map((catItem) => (
-                        <Link href={`/categories?cat=${catItem}`} className={`${styles.category} ${styles[catItem]}`}>
+                        <Link
+                            key={catItem}
+                            href={`/categories?cat=${catItem}`}
+                            className={`${styles.category} ${styles[catItem]}`}
+                        >
                             {catItem}
                         </Link>
                     ))}
